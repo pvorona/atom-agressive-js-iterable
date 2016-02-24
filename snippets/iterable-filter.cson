@@ -1,0 +1,35 @@
+'.source.js, .source.ts, .source.tsx, .source.js-semantic':
+  'filter':
+    prefix: 'fil'
+    body: '${1}.filter(${2:item} => ${0})'
+  '.filter':
+    prefix: '.fil'
+    body: '.filter(${1:item} => ${0})'
+
+  'filter function':
+    prefix: 'filf'
+    body: '${1}.filter(${0})'
+  '.filter function':
+    prefix: '.filf'
+    body: '.filter(${0})'
+
+  'filter with index':
+    prefix: 'fili'
+    body: '${1}.filter((${2:item}, i) => ${0})'
+  '.filter with index':
+    prefix: '.fili'
+    body: '.filter((${1:item}, i) => ${0})'
+
+  'filter with body':
+    prefix: 'filb'
+    body: '${1}.filter(${2:item} => {\n\t${0}\n})'
+  '.filter with body':
+    prefix: '.filb'
+    body: '.filter(${1:item} => {\n\t${0}\n})'
+
+  'filter with index and body':
+    prefix: 'filib'
+    body: '${1}.filter((${2:item}, i) => {\n\t${0}\n})'
+  '.filter with index and body':
+    prefix: '.filib'
+    body: '.filter((${1:item}, i) => {\n\t${0}\n})'

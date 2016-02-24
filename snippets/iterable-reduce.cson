@@ -1,0 +1,35 @@
+'.source.js, .source.ts, .source.tsx, .source.js-semantic':
+  'reduce':
+    prefix: 'red'
+    body: '${1}.reduce(${2:item} => ${0})'
+  '.reduce':
+    prefix: '.red'
+    body: '.reduce(${1:item} => ${0})'
+
+  'reduce function':
+    prefix: 'redf'
+    body: '${1}.reduce(${0})'
+  '.reduce function':
+    prefix: '.redf'
+    body: '.reduce(${0})'
+
+  'reduce with index':
+    prefix: 'redi'
+    body: '${1}.reduce((${2:item}, i) => ${0})'
+  '.reduce with index':
+    prefix: '.redi'
+    body: '.reduce((${1:item}, i) => ${0})'
+
+  'reduce with body':
+    prefix: 'redb'
+    body: '${1}.reduce(${2:item} => {\n\t${0}\n})'
+  '.reduce with body':
+    prefix: '.redb'
+    body: '.reduce(${1:item} => {\n\t${0}\n})'
+
+  'reduce with index and body':
+    prefix: 'redib'
+    body: '${1}.reduce((${2:item}, i) => {\n\t${0}\n})'
+  '.reduce with index and body':
+    prefix: '.redib'
+    body: '.reduce((${1:item}, i) => {\n\t${0}\n})'

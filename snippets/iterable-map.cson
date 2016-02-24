@@ -1,0 +1,35 @@
+'.source.js, .source.ts, .source.tsx, .source.js-semantic':
+  'map':
+    prefix: 'map'
+    body: '${1}.map(${2:item} => ${0})'
+  '.map':
+    prefix: '.map'
+    body: '.map(${1:item} => ${0})'
+
+  'map function':
+    prefix: 'mapf'
+    body: '${1}.map(${0})'
+  '.map function':
+    prefix: '.mapf'
+    body: '.map(${0})'
+
+  'map with index':
+    prefix: 'mapi'
+    body: '${1}.map((${2:item}, i) => ${0})'
+  '.map with index':
+    prefix: '.mapi'
+    body: '.map((${1:item}, i) => ${0})'
+
+  'map with body':
+    prefix: 'mapb'
+    body: '${1}.map(${2:item} => {\n\t${0}\n})'
+  '.map with body':
+    prefix: '.mapb'
+    body: '.map(${1:item} => {\n\t${0}\n})'
+
+  'map with index and body':
+    prefix: 'mapib'
+    body: '${1}.map((${2:item}, i) => {\n\t${0}\n})'
+  '.map with index and body':
+    prefix: '.mapib'
+    body: '.map((${1:item}, i) => {\n\t${0}\n})'

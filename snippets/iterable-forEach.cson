@@ -1,0 +1,35 @@
+'.source.js, .source.ts, .source.tsx, .source.js-semantic':
+  'forEach':
+    prefix: 'fe'
+    body: '${1}.forEach(${2:item} => ${0});'
+  '.forEach':
+    prefix: '.fe'
+    body: '.forEach(${1:item} => ${0});'
+
+  'forEach function':
+    prefix: 'fef'
+    body: '${1}.forEach(${0});'
+  '.forEach function':
+    prefix: '.fef'
+    body: '.forEach(${0});'
+
+  'forEach with index':
+    prefix: 'fei'
+    body: '${1}.forEach((${2:item}, i) => ${0});'
+  '.forEach with index':
+    prefix: '.fei'
+    body: '.forEach((${1:item}, i) => ${0});'
+
+  'forEach with body':
+    prefix: 'feb'
+    body: '${1}.forEach(${2:item} => {\n\t${0}\n});'
+  '.forEach with body':
+    prefix: '.feb'
+    body: '.forEach(${1:item} => {\n\t${0}\n});'
+
+  'forEach with index and body':
+    prefix: 'feib'
+    body: '${1}.forEach((${2:item}, i) => {\n\t${0}\n});'
+  '.forEach with index and body':
+    prefix: '.feib'
+    body: '.forEach((${1:item}, i) => {\n\t${0}\n});'
