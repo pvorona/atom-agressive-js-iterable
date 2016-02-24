@@ -1,7 +1,7 @@
 {
   "name": "atom-agressive-js-iterable",
   "main": "./lib/atom-agressive-js-iterable",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Agressive js snippets for iterables",
   "keywords": [
     "snippets"
