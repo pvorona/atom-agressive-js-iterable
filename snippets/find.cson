@@ -1,0 +1,35 @@
+'.source.js, .source.ts, .source.tsx, .source.js-semantic':
+  'find':
+    prefix: 'find'
+    body: '${1}.find(${2:item} => ${0});'
+  '.find':
+    prefix: '.find'
+    body: '.find(${1:item} => ${0});'
+
+  'find function':
+    prefix: 'findf'
+    body: '${1}.find(${0});'
+  '.find function':
+    prefix: '.findf'
+    body: '.find(${0});'
+
+  'find with index':
+    prefix: 'findi'
+    body: '${1}.find((${2:item}, i) => ${0});'
+  '.find with index':
+    prefix: '.findi'
+    body: '.find((${1:item}, i) => ${0});'
+
+  'find with body':
+    prefix: 'findb'
+    body: '${1}.find(${2:item} => {\n\t${0}\n});'
+  '.find with body':
+    prefix: '.findb'
+    body: '.find(${1:item} => {\n\t${0}\n});'
+
+  'find with index and body':
+    prefix: 'findib'
+    body: '${1}.find((${2:item}, i) => {\n\t${0}\n});'
+  '.find with index and body':
+    prefix: '.findib'
+    body: '.find((${1:item}, i) => {\n\t${0}\n});'

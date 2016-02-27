@@ -1,0 +1,35 @@
+'.source.js, .source.ts, .source.tsx, .source.js-semantic':
+  'pluck':
+    prefix: 'pluck'
+    body: '${1}.pluck(${2:item} => ${0})'
+  '.pluck':
+    prefix: '.pluck'
+    body: '.pluck(${1:item} => ${0})'
+
+  'pluck function':
+    prefix: 'pluckf'
+    body: '${1}.pluck(${0})'
+  '.pluck function':
+    prefix: '.pluckf'
+    body: '.pluck(${0})'
+
+  'pluck with index':
+    prefix: 'plucki'
+    body: '${1}.pluck((${2:item}, i) => ${0})'
+  '.pluck with index':
+    prefix: '.plucki'
+    body: '.pluck((${1:item}, i) => ${0})'
+
+  'pluck with body':
+    prefix: 'pluckb'
+    body: '${1}.pluck(${2:item} => {\n\t${0}\n})'
+  '.pluck with body':
+    prefix: '.pluckb'
+    body: '.pluck(${1:item} => {\n\t${0}\n})'
+
+  'pluck with index and body':
+    prefix: 'pluckib'
+    body: '${1}.pluck((${2:item}, i) => {\n\t${0}\n})'
+  '.pluck with index and body':
+    prefix: '.pluckib'
+    body: '.pluck((${1:item}, i) => {\n\t${0}\n})'

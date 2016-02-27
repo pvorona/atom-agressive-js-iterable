@@ -1,0 +1,35 @@
+'.source.js, .source.ts, .source.tsx, .source.js-semantic':
+  'some':
+    prefix: 'some'
+    body: '${1}.some(${2:item} => ${0});'
+  '.some':
+    prefix: '.some'
+    body: '.some(${1:item} => ${0});'
+
+  'some function':
+    prefix: 'somef'
+    body: '${1}.some(${0});'
+  '.some function':
+    prefix: '.somef'
+    body: '.some(${0});'
+
+  'some with index':
+    prefix: 'somei'
+    body: '${1}.some((${2:item}, i) => ${0});'
+  '.some with index':
+    prefix: '.somei'
+    body: '.some((${1:item}, i) => ${0});'
+
+  'some with body':
+    prefix: 'someb'
+    body: '${1}.some(${2:item} => {\n\t${0}\n});'
+  '.some with body':
+    prefix: '.someb'
+    body: '.some(${1:item} => {\n\t${0}\n});'
+
+  'some with index and body':
+    prefix: 'someib'
+    body: '${1}.some((${2:item}, i) => {\n\t${0}\n});'
+  '.some with index and body':
+    prefix: '.someib'
+    body: '.some((${1:item}, i) => {\n\t${0}\n});'
