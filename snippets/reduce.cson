@@ -1,10 +1,10 @@
 '.source.js, .source.ts, .source.tsx, .source.js-semantic':
   'reduce':
     prefix: 'red'
-    body: '${1}.reduce(${2:item} => ${0})'
+    body: '${1}.reduce((${2:acc}, ${3:curr}) => ${0})'
   '.reduce':
     prefix: '.red'
-    body: '.reduce(${1:item} => ${0})'
+    body: '.reduce((${1:acc}, ${2:curr}) => ${0})'
 
   'reduce function':
     prefix: 'redf'
@@ -15,21 +15,21 @@
 
   'reduce with index':
     prefix: 'redi'
-    body: '${1}.reduce((${2:item}, i) => ${0})'
+    body: '${1}.reduce((${2:acc}, ${3:curr}, i) => ${0})'
   '.reduce with index':
     prefix: '.redi'
-    body: '.reduce((${1:item}, i) => ${0})'
+    body: '.reduce((${1:acc}, ${2:curr}, i) => ${0})'
 
   'reduce with body':
     prefix: 'redb'
-    body: '${1}.reduce(${2:item} => {\n\t${0}\n})'
+    body: '${1}.reduce((${1:item}, ${3:curr}) => {\n\t${0}\n})'
   '.reduce with body':
     prefix: '.redb'
-    body: '.reduce(${1:item} => {\n\t${0}\n})'
+    body: '.reduce((${1:acc}, ${2:curr}) => {\n\t${0}\n})'
 
   'reduce with index and body':
     prefix: 'redib'
-    body: '${1}.reduce((${2:item}, i) => {\n\t${0}\n})'
+    body: '${1}.reduce((${2:item}, ${3:curr}, i) => {\n\t${0}\n})'
   '.reduce with index and body':
     prefix: '.redib'
-    body: '.reduce((${1:item}, i) => {\n\t${0}\n})'
+    body: '.reduce((${1:item}, ${2:curr}, i) => {\n\t${0}\n})'
